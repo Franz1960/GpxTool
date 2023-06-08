@@ -679,8 +679,10 @@ namespace GpxTool {
 
          // ...
 
+#if PLATFORM_WINDOWS
          if (File.Exists("gpxtool.html"))
             CmdlineOptions.ShowHtmlfile("gpxtool.html");
+#endif
       }
 
    }
